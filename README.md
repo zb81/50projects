@@ -1,2 +1,3 @@
 # 50projects
-forked from 50projects50days
+
+Imitation of [50projects50days](https://github.com/bradtraversy/50projects50days)

@@ -1,0 +1,85 @@
+.container {
+  --active-color: #ee4f23;
+  width: 40vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.bar {
+  width: 80%;
+  height: 4px;
+  background-color: #fff;
+  position: relative;
+}
+.bar-progress {
+  position: absolute;
+  left: 0;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  background: var(--active-color);
+  z-index: 3;
+  transition: all 700ms;
+}
+
+.step {
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 22px;
+  color: #666;
+  border-radius: 50%;
+  background-color: #fff;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ccc;
+  z-index: 4;
+  transition: border 700ms ease-in;
+}
+.step.active {
+  border-color: var(--active-color);
+}
+
+.step:nth-child(1) {
+  transform: translate3d(-50%, -50%, 0);
+}
+.step:nth-child(2) {
+  left: 33.333%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.step:nth-child(3) {
+  left: 66.666%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.step:nth-child(4) {
+  right: 0;
+  transform: translate3d(50%, -50%, 0);
+}
+
+.btn-group {
+  margin-top: 50px;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 6px 24px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--active-color);
+}
+.btn:last-child {
+  margin-left: 10px;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn.disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

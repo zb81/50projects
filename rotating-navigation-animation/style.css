@@ -3,33 +3,56 @@
 * {
   box-sizing: border-box;
 }
+ul {
+  list-style: none;
+}
 
 body {
   font-family: 'Muli', sans-serif;
   margin: 0;
-  background-color: #333;
-  color: #ccc;
+  color: #efefef;
+  overflow-x: hidden;
+  background-color: indianred;
 }
 
 .container {
+  background-color: #333;
+  padding: 100px;
+  transform-origin: 0 0;
+  transition: transform 500ms ease-in;
 }
 
 .circle-container {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #fff;
   position: fixed;
   top: -100px;
   left: -100px;
+  transition: transform 500ms ease-in;
 }
 
-.content {
-  width: 1000px;
-  margin: 100px auto;
+#open,
+#close {
+  position: absolute;
+  color: #333;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  cursor: pointer;
 }
+#open {
+  bottom: 35px;
+  right: 45px;
+}
+#close {
+  bottom: 55px;
+  left: 30px;
+}
+
 .content h1 {
-  margin: 0;
+  margin: 10px 0;
 }
 .content p {
   line-height: 1.5;
@@ -39,5 +62,33 @@ body {
 }
 
 img {
-  width: 1000px;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  font-size: 1.2rem;
+  line-height: 50px;
+  padding: 20px 0;
+}
+
+nav li {
+  position: relative;
+  transition: all 500ms ease-in;
+  transform: translateX(-200%);
+  opacity: 0;
+}
+
+nav li:nth-child(2) {
+  transition-delay: 150ms;
+}
+nav li:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+nav li i {
+  margin-right: 10px;
 }

@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>50 Projects</title>
     <link rel="stylesheet" href="./common.css" />
+    <style media="screen and (min-width: 50px)">
+      .link-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    </style>
+    <style media="screen and (min-width: 750px)">
+      .link-list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    </style>
+    <style media="screen and (min-width: 960px)">
+      .link-list {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    </style>
+    <style media="screen and (min-width: 1380px)">
+      .link-list {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    </style>
+
     <style>
       .link-list {
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
         column-gap: 50px;
         row-gap: 30px;
       }

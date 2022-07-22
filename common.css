@@ -9,8 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   margin: 0;
   background-color: #333;
   color: #aaa;

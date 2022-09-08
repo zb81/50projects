@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #6e59e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+}
+
+.input {
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 15px;
+  background-color: #fff;
+  transition: all 0.3s;
+  font-size: 18px;
+}
+
+.input.active {
+  width: 250px;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+i {
+  font-size: 20px;
+}

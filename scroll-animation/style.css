@@ -1,0 +1,46 @@
+body {
+  background: #efedd8;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.box {
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+  background: steelblue;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transform: translateX(200%);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+
+.box.show {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.trigger {
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: fixed;
+  top: 50%;
+}
+
+.trigger::after {
+  content: 'Trigger';
+  position: absolute;
+}

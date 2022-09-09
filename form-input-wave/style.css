@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root {
+  --btn-color: lightblue;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: #5680b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.app {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.form-item {
+  width: 300px;
+  margin: 20px 0 40px;
+  position: relative;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: var(--btn-color);
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.text {
+  margin-top: 30px;
+}
+
+a {
+  color: var(--btn-color);
+  text-decoration: none;
+}
+
+.form-item input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  padding: 15px 0;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+
+.form-item label span {
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* input:focus ~ label {
+  bottom: 50px;
+} */
+
+input:focus ~ label span {
+  color: var(--btn-color);
+  transform: translateY(-30px);
+}

@@ -78,7 +78,8 @@ label {
   bottom: 50px;
 } */
 
-input:focus ~ label span {
+input:focus ~ label span,
+input:valid ~ label span {
   color: var(--btn-color);
   transform: translateY(-30px);
 }

@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: center / cover no-repeat url('imgs/kun.jpg');
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  background-color: rebeccapurple;
+  border: none;
+  border-radius: 5px;
+  padding: 1.5rem 3rem;
+  color: white;
+  margin: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn:active {
+  opacity: 1;
+}

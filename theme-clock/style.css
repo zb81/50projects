@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: #fff;
+    --secondary-color: #111;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #111;
+    --secondary-color: #fff;
+  }
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px;
+}
+.toggle:active {
+  transform: scale(0.95);
+}
+
+.clock-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.clock {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.needle {
+  background-color: var(--secondary-color);
+  width: 3px;
+  height: 65px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transition: all 1s linear;
+}
+.needle.minute {
+  height: 100px;
+}
+.needle.second {
+  height: 100px;
+  background-color: #e74c3c;
+}
+
+.center-point {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e74c3c;
+  border-radius: 50%;
+}
+.center-point::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time {
+  font-size: 60px;
+}
+.date {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.date .circle {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: inline-flex;
+  height: 18px;
+  width: 18px;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
+}

@@ -2,5 +2,15 @@
   "eslint.enable": false,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["btns", "imgs", "tada"]
+  "cSpell.words": [
+    "adipisicing",
+    "amet",
+    "btns",
+    "consectetur",
+    "consequuntur",
+    "elit",
+    "imgs",
+    "perferendis",
+    "tada"
+  ]
 }

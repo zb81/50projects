@@ -18,8 +18,7 @@
         <li>朱备 / 男 / 1998</li>
         <li>本科 / 徐州工程学院 / 信息管理与信息系统</li>
         <li>工作年限：2 年</li>
-        <li>博客：https://zhubei.site</li>
-        <li>GitHub：https://github.com/zb980921</li>
+        <li>Github：https://github.com/zb980921</li>
         <li>期望职位：Web 前端开发工程师</li>
         <li>期望薪资：税后月薪 16k</li>
         <li>期望城市：杭州 / 南京 / 上海</li>
@@ -27,141 +26,160 @@
       <h1>工作经历</h1>
       <h2>易启策网络科技有限公司（2021 年 5 月 ~ ）</h2>
       <h3>一、前端基建</h3>
-      <h4>1. create-app CLI</h4>
-      <p>
-        参考开源社区已有的 CLI
-        工具，根据公司的实际情况开发了一个快速生成前端项目模板的 CLI
-        应用，主要包括 <code data-backticks="1">Vue2</code> 、<code
-          data-backticks="1"
-          >Vue3</code
-        >
-        、<code data-backticks="1">Vue3 Mobile</code> 三个模板。PC Web 项目除
-        <code data-backticks="1">Vue</code> 之外，还集成了一些常用的库，如
-        <code data-backticks="1">NaiveUI</code> 、<code data-backticks="1"
-          >Tailwind CSS</code
-        >
-        、网络请求等等。移动端 Web 项目在 PC 的基础上集成了
-        <code data-backticks="1">Vant</code> 、<code data-backticks="1"
-          >px2vw</code
-        >
-        插件，进行屏幕适配。此外，每个项目模板都集成了
-        <code data-backticks="1">husky</code> +
-        <code data-backticks="1">commitlint</code> +
-        <code data-backticks="1">ESLint</code>
-        ，对代码和提交进行规范检查；集成
-        <code data-backticks="1">Docker</code> 进行生产环境的
-        <code data-backticks="1">Nginx</code> 镜像构建。
-      </p>
-      <h4>2. 代码规范</h4>
-      <p>
-        详细配置
-        <code data-backticks="1">ESLint</code>
-        的每条规则，以及不同文件格式对应的
-        <code data-backticks="1">parser</code> ，并将配置发布到 npm
-        私仓。该配置包含 basic 、ts 、vue 三个包，对
-        <code data-backticks="1">.html</code> 、<code data-backticks="1"
-          >.js</code
-        >
-        、<code data-backticks="1">.ts</code> 、<code data-backticks="1"
-          >.vue</code
-        >
-        、<code data-backticks="1">.md</code> 文件进行规范检查。
-      </p>
-      <h4>3. ease-request</h4>
-      <p>
-        使用 <code data-backticks="1">TypeScript</code> 对
-        <code data-backticks="1">Axios</code>
-        进行二次封装，以获得更精细的请求配置（拦截器可配置到具体的每个请求）和类型提示（泛型）。使用
-        <code data-backticks="1">tsc</code> 对源码进行构建，发布到 npm
-        私仓，方便他人使用。
-      </p>
+      <ul>
+        <li>
+          <p>
+            npm 仓库<br />
+            使用 Nexus 搭建 npm 私仓
+          </p>
+        </li>
+        <li>
+          <p>
+            create-app CLI<br />
+            参考开源社区已有的 CLI 工具，开发了一个快速生成前端项目模板的 CLI
+            应用，主要包括 Vue2 、Vue3 、Vue3 Mobile 三个模板。PC Web 项目除 Vue
+            之外，还集成了一些常用的库，如 NaiveUI 、Tailwind CSS
+            、网络请求库等。移动端 Web 项目在 PC 的基础上集成了 Vant 、px2vw
+            、vh-check 等插件，进行屏幕适配。此外，每个项目模板都集成了 husky +
+            commitlint + ESLint + prettier + lint-stage
+            ，对代码和提交进行规范检查；集成 Docker 用于生产环境的 Nginx
+            镜像构建
+          </p>
+        </li>
+        <li>
+          <p>
+            代码规范<br />
+            详细配置 ESLint 规则，以及不同文件格式对应的 parser ，并将配置发布到
+            npm 私仓。仓库使用 monorepo 方案进行代码管理，包含 basic 、ts 、vue
+            三个包，分别对 .js 、.ts 、.vue
+            等文件进行代码规范检查，用户可以按需安装对应的配置
+          </p>
+        </li>
+        <li>
+          <p>
+            ease-request<br />
+            使用 TypeScript 对 Axios
+            进行二次封装，以获得更精细的请求配置（拦截器可配置到具体的每个请求）和类型提示（泛型）。使用
+            tsc 对源码进行构建，并发布到 npm 私仓
+          </p>
+        </li>
+      </ul>
       <h3>二、xx 学苑管理端</h3>
       <ul>
         <li>
-          <strong>简介</strong>：使用 <code data-backticks="1">Vue3</code> +
-          <code data-backticks="1">TSX</code>
-          开发。用于对配套的小程序进行内容管理。
+          简介：对小程序学员端、教师端进行内容管理，以及评价任务的发放、统计
         </li>
         <li>
-          <strong>职责</strong
-          >：搭建项目结构；封装可复用的组件以及组合函数；调研相关技术方案；登录、培训管理、推送管理、课程库、教师库等模块的开发和维护；课程、教师评价问卷模块的开发和维护等。
+          技术：Vite 、Vue3 、TSX 、VueRouter 、NaiveUI 、Tailwind 、Pinia
+          、ECharts 等
         </li>
         <li>
-          <strong>技术</strong>：使用
-          <code data-backticks="1">Vite</code> 进行项目构建；使用
-          <code data-backticks="1">NaiveUI</code> 作为组件库；使用
-          <code data-backticks="1">Pinia</code> 进行全局状态管理；使用
-          <code data-backticks="1">wangeditor</code>
-          二次封装富文本编辑器组件；使用二次封装的高德地图组件
-          <code data-backticks="1">vue-amap</code>
-          ，进行签到、授课地点的选择；使用
-          <code data-backticks="1">cropperjs</code>
-          进行教师、学员头像的裁剪；使用
-          <code data-backticks="1">ECharts</code>
-          展示教师、课程的评价统计结果。
+          职责：
+          <ul>
+            <li>
+              开发脚本，通过预先配置好的路由 json ，使用 npm script 快速生成
+              router 、views 目录
+            </li>
+            <li>
+              配置 Vite ，使用 loadEnv 加载环境变量；使用 import.meta.glob
+              批量导入 svg ，并通过 vite-svg-loader 将 svg 注册为全局 Vue 组件
+            </li>
+            <li>
+              封装公共组件，给每个组件添加文档，介绍 props 、slots 、events
+              ，方便他人使用和维护
+            </li>
+            <li>
+              调研高德地图组件 vue-amap
+              ，在其基础上二次封装，用于授课、签到地点的选择、回显
+            </li>
+            <li>
+              调研 TinyMCE ，集成 indent2em 插件，进行二次封装；通过 npm
+              postinstall 钩子，将插件代码复制到 node_modules/tinymce/plugins
+              目录，解决插件 not found 错误
+            </li>
+            <li>和后端人员评审接口并对接，开发培训管理、推送任务等业务模块</li>
+            <li>配合后端、运维，调整 Nginx 代理配置，确保项目正确部署</li>
+          </ul>
         </li>
       </ul>
-      <h3>三、xxx 官网（<a href="https://www.jchc.cn/home">地址</a>）</h3>
+      <h3>三、xxx 官网（https://www.jchc.cn）</h3>
       <ul>
+        <li>简介：企业官网，包含首页、新闻资讯等模块</li>
         <li>
-          <strong>简介</strong>：使用 <code data-backticks="1">Vue3</code> +
-          <code data-backticks="1">TypeScript</code>
-          开发，展示企业的相关信息、新闻资讯等内容。
+          技术：Vue3 、TypeScript 、VueRouter 、Pinia 、Tailwind 、animate.css
+          等
         </li>
         <li>
-          <strong>职责</strong>：搭建项目结构；封装
-          <code data-backticks="1">fullpage</code> 全屏滚动组件；开发首页的 7
-          个子页面及其动效。
-        </li>
-        <li>
-          <strong>技术</strong>：使用
-          <code data-backticks="1">Vite</code> 进行项目构建；<code
-            data-backticks="1"
-            >location.hash</code
-          >
-          的缓存同步；使用 <code data-backticks="1">animate.css</code> 搭配
-          <code data-backticks="1">Tailwind CSS</code> 快速开发首页动效。
+          职责：
+          <ul>
+            <li>初始化项目，配置 devServer ，搭建路由框架及页面布局</li>
+            <li>
+              封装 fullpage 组件，监听鼠标滑轮事件，控制 translateY
+              进行全屏滚动；将 currentPage 和 location.hash 绑定并缓存至
+              sessionStorage
+            </li>
+            <li>
+              配置 unplugin-auto-import 和 unplugin-vue-components
+              插件，实现全局组件和组合式 API 的自动导入
+            </li>
+            <li>
+              按照设计稿开发首页，结合 animate.css 、Tailwind 、fullpage
+              滚动事件，实现动画效果
+            </li>
+            <li>
+              配置插件 @vitejs/plugin-legacy ，解决低版本 Chrome 中的报错问题
+            </li>
+          </ul>
         </li>
       </ul>
       <h3>四、xx 人才</h3>
       <ul>
+        <li>简介：统计企业培训期间的学员得分情况</li>
         <li>
-          <strong>简介</strong>：使用
-          <code data-backticks="1">Vue2</code>
-          开发。管理员录入学员数据和得分项，后端对数据进行分析后，前端将分析结果通过图表展示出来，也可以将图表导出成
-          Word
-          文档；此外，项目内嵌了一个问卷统计模块，进行问卷的创建、编辑、统计等功能。
+          技术：Vue2 、VueRouter 、Vuex 、Tailwind 、ECharts 、docx-templates 等
         </li>
         <li>
-          <strong>职责</strong
-          >：搭建项目结构；封装可复用的图表组件，如柱状图、折线图、饼图等；前期负责学员模块的开发，主要包括列表、编辑、详情；中后期由于其他成员先后离职，独自进行其它模块的开发和维护。
-        </li>
-        <li>
-          <strong>技术</strong>：使用
-          <code data-backticks="1">ECharts</code> 开发图表；使用
-          <code data-backticks="1">docx-templates</code>
-          将汇总结果和图表导出成 Word 文档；使用
-          <code data-backticks="1">vuedraggable</code>
-          使问卷模块的组件可拖拽，提升用户体验。
+          职责：
+          <ul>
+            <li>初始化项目，配置 devServer ，搭建路由框架及页面布局</li>
+            <li>
+              根据设计稿的图表样式，将通用的 ECharts
+              图表配置（颜色、字体、轴间距等）封装到组件中，包括柱状图、折线图、饼图、雷达图
+            </li>
+            <li>
+              开发问卷统计模块，抽象题目的 json
+              模型，封装单选、多选、填空三类组件，集成 vuedraggable
+              ，使题目组件可拖拽配置
+            </li>
+            <li>
+              调研 docx-templates ，实现前端的学员统计数据和图表的导出功能
+            </li>
+            <li>通过 number-precision 解决统计数据的精度问题</li>
+          </ul>
         </li>
       </ul>
       <h3>五、谈话系统</h3>
       <ul>
+        <li>简介：将谈话语音转成文字，记录并分析关键词</li>
         <li>
-          <strong>简介</strong>：使用
-          <code data-backticks="1">Vue2</code>
-          开发。发起人创建会议，系统将谈话内容转成文字并记录；用户可以对谈话进行音频截取，并设置说话人，最后将谈话内容上传至服务器进行关键词分析。
+          技术：Vue2 、VueRouter 、Vuex 、ElementUI 、js-audio-recorder 等
         </li>
         <li>
-          <strong>职责</strong
-          >：搭建项目结构；调研并对接科大讯飞的语音识别接口；调研浏览器录音的技术方案；调研音频裁剪的技术方案；独自开发所有模块。
-        </li>
-        <li>
-          <strong>技术</strong>：使用
-          <code data-backticks="1">js-audio-recorder</code>
-          进行音频录制；使用科大讯飞接口进行语音识别；使用
-          <code data-backticks="1">AudioContext</code>
-          进行音频流的裁切和转换。
+          职责：
+          <ul>
+            <li>
+              使用 vue-cli 初始化项目，配置 devServer ，搭建路由框架及页面布局
+            </li>
+            <li>
+              调研 js-audio-recorder
+              ，快速实现录音、暂停、恢复、播放、音波绘制等功能
+            </li>
+            <li>
+              对接科大讯飞的语音识别接口，获取识别结果并存储在 Vuex
+              中，供其它组件使用
+            </li>
+            <li>使用 AudioContext API 实现音频片段的截取</li>
+          </ul>
         </li>
       </ul>
       <h1>技能清单</h1>

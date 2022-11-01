@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>朱备的简历 - ZhuBei's resume</title>
+  </head>
+  <body>
+    <div class="tui-editor-contents">
+      <ul>
+        <li>手机/微信：13013956748</li>
+        <li>Email：zbneversettle@gmail.com</li>
+      </ul>
+      <h1>个人信息</h1>
+      <ul>
+        <li>朱备 / 男 / 1998</li>
+        <li>本科 / 徐州工程学院 / 信息管理与信息系统</li>
+        <li>工作年限：2 年</li>
+        <li>博客：https://zhubei.site</li>
+        <li>GitHub：https://github.com/zb980921</li>
+        <li>期望职位：Web 前端开发工程师</li>
+        <li>期望薪资：税后月薪 16k</li>
+        <li>期望城市：杭州 / 南京 / 上海</li>
+      </ul>
+      <h1>工作经历</h1>
+      <h2>易启策网络科技有限公司（2021 年 5 月 ~ ）</h2>
+      <h3>一、前端基建</h3>
+      <h4>1. create-app CLI</h4>
+      <p>
+        参考开源社区已有的 CLI
+        工具，根据公司的实际情况开发了一个快速生成前端项目模板的 CLI
+        应用，主要包括 <code data-backticks="1">Vue2</code> 、<code
+          data-backticks="1"
+          >Vue3</code
+        >
+        、<code data-backticks="1">Vue3 Mobile</code> 三个模板。PC Web 项目除
+        <code data-backticks="1">Vue</code> 之外，还集成了一些常用的库，如
+        <code data-backticks="1">NaiveUI</code> 、<code data-backticks="1"
+          >Tailwind CSS</code
+        >
+        、网络请求等等。移动端 Web 项目在 PC 的基础上集成了
+        <code data-backticks="1">Vant</code> 、<code data-backticks="1"
+          >px2vw</code
+        >
+        插件，进行屏幕适配。此外，每个项目模板都集成了
+        <code data-backticks="1">husky</code> +
+        <code data-backticks="1">commitlint</code> +
+        <code data-backticks="1">ESLint</code>
+        ，对代码和提交进行规范检查；集成
+        <code data-backticks="1">Docker</code> 进行生产环境的
+        <code data-backticks="1">Nginx</code> 镜像构建。
+      </p>
+      <h4>2. 代码规范</h4>
+      <p>
+        详细配置
+        <code data-backticks="1">ESLint</code>
+        的每条规则，以及不同文件格式对应的
+        <code data-backticks="1">parser</code> ，并将配置发布到 npm
+        私仓。该配置包含 basic 、ts 、vue 三个包，对
+        <code data-backticks="1">.html</code> 、<code data-backticks="1"
+          >.js</code
+        >
+        、<code data-backticks="1">.ts</code> 、<code data-backticks="1"
+          >.vue</code
+        >
+        、<code data-backticks="1">.md</code> 文件进行规范检查。
+      </p>
+      <h4>3. ease-request</h4>
+      <p>
+        使用 <code data-backticks="1">TypeScript</code> 对
+        <code data-backticks="1">Axios</code>
+        进行二次封装，以获得更精细的请求配置（拦截器可配置到具体的每个请求）和类型提示（泛型）。使用
+        <code data-backticks="1">tsc</code> 对源码进行构建，发布到 npm
+        私仓，方便他人使用。
+      </p>
+      <h3>二、xx 学苑管理端</h3>
+      <ul>
+        <li>
+          <strong>简介</strong>：使用 <code data-backticks="1">Vue3</code> +
+          <code data-backticks="1">TSX</code>
+          开发。用于对配套的小程序进行内容管理。
+        </li>
+        <li>
+          <strong>职责</strong
+          >：搭建项目结构；封装可复用的组件以及组合函数；调研相关技术方案；登录、培训管理、推送管理、课程库、教师库等模块的开发和维护；课程、教师评价问卷模块的开发和维护等。
+        </li>
+        <li>
+          <strong>技术</strong>：使用
+          <code data-backticks="1">Vite</code> 进行项目构建；使用
+          <code data-backticks="1">NaiveUI</code> 作为组件库；使用
+          <code data-backticks="1">Pinia</code> 进行全局状态管理；使用
+          <code data-backticks="1">wangeditor</code>
+          二次封装富文本编辑器组件；使用二次封装的高德地图组件
+          <code data-backticks="1">vue-amap</code>
+          ，进行签到、授课地点的选择；使用
+          <code data-backticks="1">cropperjs</code>
+          进行教师、学员头像的裁剪；使用
+          <code data-backticks="1">ECharts</code>
+          展示教师、课程的评价统计结果。
+        </li>
+      </ul>
+      <h3>三、xxx 官网（<a href="https://www.jchc.cn/home">地址</a>）</h3>
+      <ul>
+        <li>
+          <strong>简介</strong>：使用 <code data-backticks="1">Vue3</code> +
+          <code data-backticks="1">TypeScript</code>
+          开发，展示企业的相关信息、新闻资讯等内容。
+        </li>
+        <li>
+          <strong>职责</strong>：搭建项目结构；封装
+          <code data-backticks="1">fullpage</code> 全屏滚动组件；开发首页的 7
+          个子页面及其动效。
+        </li>
+        <li>
+          <strong>技术</strong>：使用
+          <code data-backticks="1">Vite</code> 进行项目构建；<code
+            data-backticks="1"
+            >location.hash</code
+          >
+          的缓存同步；使用 <code data-backticks="1">animate.css</code> 搭配
+          <code data-backticks="1">Tailwind CSS</code> 快速开发首页动效。
+        </li>
+      </ul>
+      <h3>四、xx 人才</h3>
+      <ul>
+        <li>
+          <strong>简介</strong>：使用
+          <code data-backticks="1">Vue2</code>
+          开发。管理员录入学员数据和得分项，后端对数据进行分析后，前端将分析结果通过图表展示出来，也可以将图表导出成
+          Word
+          文档；此外，项目内嵌了一个问卷统计模块，进行问卷的创建、编辑、统计等功能。
+        </li>
+        <li>
+          <strong>职责</strong
+          >：搭建项目结构；封装可复用的图表组件，如柱状图、折线图、饼图等；前期负责学员模块的开发，主要包括列表、编辑、详情；中后期由于其他成员先后离职，独自进行其它模块的开发和维护。
+        </li>
+        <li>
+          <strong>技术</strong>：使用
+          <code data-backticks="1">ECharts</code> 开发图表；使用
+          <code data-backticks="1">docx-templates</code>
+          将汇总结果和图表导出成 Word 文档；使用
+          <code data-backticks="1">vuedraggable</code>
+          使问卷模块的组件可拖拽，提升用户体验。
+        </li>
+      </ul>
+      <h3>五、谈话系统</h3>
+      <ul>
+        <li>
+          <strong>简介</strong>：使用
+          <code data-backticks="1">Vue2</code>
+          开发。发起人创建会议，系统将谈话内容转成文字并记录；用户可以对谈话进行音频截取，并设置说话人，最后将谈话内容上传至服务器进行关键词分析。
+        </li>
+        <li>
+          <strong>职责</strong
+          >：搭建项目结构；调研并对接科大讯飞的语音识别接口；调研浏览器录音的技术方案；调研音频裁剪的技术方案；独自开发所有模块。
+        </li>
+        <li>
+          <strong>技术</strong>：使用
+          <code data-backticks="1">js-audio-recorder</code>
+          进行音频录制；使用科大讯飞接口进行语音识别；使用
+          <code data-backticks="1">AudioContext</code>
+          进行音频流的裁切和转换。
+        </li>
+      </ul>
+      <h1>技能清单</h1>
+      <ul>
+        <li>Web开发：TypeScript / JavaScript / JSX / CSS / HTML</li>
+        <li>前端框架：Vue3 / React / Vue2</li>
+        <li>UI 库：Tailwind CSS / Naive UI / Element UI / Ant Design</li>
+        <li>周边工具：Webpack / Vite / npm / pnpm / nvm</li>
+        <li>DevOps：Git / Docker / Nginx</li>
+      </ul>
+    </div>
+  </body>
+</html>

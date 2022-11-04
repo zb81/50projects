@@ -3,38 +3,40 @@ const counter = document.querySelector('.counter')
 const final = document.querySelector('.final')
 const nums = document.querySelectorAll('.nums span')
 
-replayBtn.addEventListener('click', startAnimation)
+startAnimation()
 
-function startAnimation() {
+function reset() {
   counter.classList.remove('hide')
   final.classList.remove('show')
-  nums.forEach((el, idx) => {
-    el.classList.remove('out')
-    if (idx > 0) {
-      el.classList.remove('in')
-    } else {
-      el.classList.add('in')
-    }
+  nums.forEach((numEl) => {
+    numEl.classList.value = ''
   })
-
-  let i = 1
-  function circle() {
-    setTimeout(() => {
-      nums[i - 1].classList.remove('in')
-      nums[i - 1].classList.add('out')
-      setTimeout(() => {
-        if (i < nums.length) {
-          nums[i].classList.add('in')
-          i++
-          circle()
-        } else {
-          counter.classList.add('hide')
-          final.classList.add('show')
-        }
-      }, 500)
-    }, 500)
-  }
-  circle()
+  nums[0].classList.add('in')
 }
 
-startAnimation()
+function startAnimation() {
+  nums.forEach((numEl, idx) => {
+    numEl.addEventListener('animationend', (event) => {
+      /*
+        1. goIn 动画结束，添加 out 类，移除 in 类
+        2. goOut 动画结束，为下一个元素添加 in 类
+        3. 动画进行至最后一个元素，隐藏 counter ，显示 final
+      */
+      const { animationName } = event
+      if (animationName === 'goIn') {
+        numEl.classList.add('out')
+        numEl.classList.remove('in')
+      } else if (animationName === 'goOut' && idx < nums.length - 1) {
+        numEl.nextElementSibling.classList.add('in')
+      } else {
+        counter.classList.add('hide')
+        final.classList.add('show')
+      }
+    })
+  })
+}
+
+replayBtn.addEventListener('click', () => {
+  reset()
+  startAnimation()
+})

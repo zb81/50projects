@@ -2,8 +2,8 @@
 
 .tui-editor-contents,
 .CodeMirror {
-  font-family: 'Georgia', 'Xin Gothic', 'Hiragino Sans GB',
-    'Droid Sans Fallback', 'Microsoft YaHei', sans-serif;
+  font-family: 'Songti SC', 'SimSun', 'Georgia', 'Xin Gothic',
+    'Hiragino Sans GB', 'Droid Sans Fallback', 'Microsoft YaHei', sans-serif;
 }
 
 .tui-editor-contents *:not(table) {
@@ -41,7 +41,7 @@
   font-size: 1.6rem;
   line-height: 28px;
   border-bottom: 3px double #999;
-  margin: 52px 0 15px 0;
+  margin: 35px 0 20px 0;
   padding-bottom: 7px;
   color: #000;
 }
@@ -201,7 +201,7 @@ ol p {
 
 .tui-editor-contents a {
   text-decoration: underline;
-  color: #ec7175;
+  color: blue;
 }
 
 .tui-editor-contents a:hover {
@@ -209,7 +209,12 @@ ol p {
 }
 
 .tui-editor-contents {
-  font-size: 13px;
+  font-size: 15px;
   margin: 0;
   padding: 0;
+}
+
+.个人信息 {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
 }

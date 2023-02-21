@@ -10,184 +10,102 @@
   <body>
     <div class="tui-editor-contents">
       <ul>
-        <li>手机/微信：13013956748</li>
-        <li>Email：zbneversettle@gmail.com</li>
+        <li>手机 / 微信：13013956748</li>
+        <li>
+          Email：<a
+            href="mailto:zbneversettle@gmail.com"
+            target="_blank"
+            class="url"
+            >zbneversettle@gmail.com</a
+          >
+        </li>
       </ul>
-      <h1>个人信息</h1>
-      <ul>
+      <h1 id="个人信息">个人信息</h1>
+      <ul class="个人信息">
         <li>朱备 / 男 / 1998</li>
         <li>本科 / 徐州工程学院 / 信息管理与信息系统</li>
-        <li>工作年限：2 年</li>
-        <li>Github：https://github.com/zb980921</li>
         <li>期望职位：Web 前端开发工程师</li>
-      </ul>
-      <h1>工作经历</h1>
-      <h2>易启策网络科技有限公司（2021 年 5 月 ~ 2023 年 1 月）</h2>
-      <h3>一、前端基建</h3>
-      <ul>
+        <li>期望城市：杭州</li>
+        <li>工作年限：2.5 年</li>
         <li>
-          <p>
-            npm 仓库<br />
-            使用 Nexus 搭建 npm 私仓
-          </p>
-        </li>
-        <li>
-          <p>
-            create-app CLI<br />
-            一个快速生成前端项目模板的 CLI
-            应用，主要包括 PC 端、移动端两个模板。除 Vue
-            之外，还集成了一些常用的库，如 NaiveUI 、Tailwind CSS
-            、网络请求库等。移动端在 PC 的基础上集成了 px2vw
-            、vh-check 等插件，进行屏幕适配。此外，每个项目模板都集成了 husky +
-            commitlint + ESLint + prettier + lint-stage
-            ，对代码和提交进行规范检查；集成 Docker 用于生产环境的 Nginx
-            镜像构建
-          </p>
-        </li>
-        <li>
-          <p>
-            代码规范<br />
-            详细配置 ESLint 规则，以及不同文件格式对应的 parser ，并将配置发布到
-            npm 私仓。仓库使用 monorepo 方案进行代码管理，包含 basic 、ts 、vue
-            三个包，分别对 .js 、.ts 、.vue
-            等文件进行代码规范检查，用户可以按需安装对应的配置
-          </p>
-        </li>
-        <li>
-          <p>
-            ease-request<br />
-            使用 TypeScript 对 Axios
-            进行二次封装，以获得更精细的请求配置（拦截器可配置到具体的每个请求）和类型提示（泛型）。使用
-            tsc 对源码进行构建，并发布到 npm 私仓
-          </p>
+          GitHub：<a
+            href="https://github.com/zb980921"
+            target="_blank"
+            class="url"
+            >https://github.com/zb980921</a
+          >
         </li>
       </ul>
-      <h3>二、xx 学苑管理端</h3>
-      <ul>
+      <h1 id="专业技能">专业技能</h1>
+      <ol start="">
+        <li>熟练使用 HTML5、CSS3 高度还原视觉设计稿</li>
+        <li>熟练编写 TypeScript、JavaScript，熟练运用 ES6 新特性</li>
+        <li>熟练使用 Vue2 / Vue3 技术栈，有 React 开发经验</li>
+        <li>有过小程序开发经验，了解跨端开发框架</li>
         <li>
-          简介：对小程序学员端、教师端进行内容管理，以及评价任务的发放、统计
+          有过前端工程化实践，熟悉 Webpack、Vite，能够独立进行项目搭建和配置
         </li>
-        <li>
-          技术：Vite 、Vue3 、TSX 、VueRouter 、NaiveUI 、Tailwind 、Pinia
-          、ECharts 等
-        </li>
-        <li>
-          职责：
-          <ul>
-            <li>
-              开发脚本，通过预先配置好的路由 json ，使用 npm script 快速生成
-              router 、views 目录
-            </li>
-            <li>
-              配置 Vite ，使用 loadEnv 加载环境变量；使用 import.meta.glob
-              批量导入 svg ，并通过 vite-svg-loader 将 svg 注册为全局 Vue 组件
-            </li>
-            <li>
-              封装公共组件，给每个组件添加文档，介绍 props 、slots 、events
-              ，方便他人使用和维护
-            </li>
-            <li>
-              调研高德地图组件 vue-amap
-              ，在其基础上二次封装，用于授课、签到地点的选择、回显
-            </li>
-            <li>
-              调研 TinyMCE ，集成 indent2em 插件，进行二次封装；通过 npm
-              postinstall 钩子，将插件代码复制到 node_modules/tinymce/plugins
-              目录，解决插件 not found 错误
-            </li>
-            <li>和后端人员评审接口并对接，开发培训管理、推送任务等业务模块</li>
-            <li>配合后端、运维，调整 Nginx 代理配置，确保项目正确部署</li>
-          </ul>
-        </li>
-      </ul>
-      <h3>三、江苏交控官网（https://www.jchc.cn / https://english.jchc.cn）</h3>
-      <ul>
-        <li>简介：企业官网，包含首页、新闻资讯等模块</li>
-        <li>
-          技术：Vue3 、TypeScript 、VueRouter 、Pinia 、Tailwind 、animate.css
-          等
-        </li>
-        <li>
-          职责：
-          <ul>
-            <li>初始化项目，配置 devServer ，搭建路由框架及页面布局</li>
-            <li>
-              封装 fullpage 组件，监听鼠标滑轮事件，控制 translateY
-              进行全屏滚动；将 currentPage 和 location.hash 绑定并缓存至
-              sessionStorage
-            </li>
-            <li>
-              配置 unplugin-auto-import 和 unplugin-vue-components
-              插件，实现全局组件和组合式 API 的自动导入
-            </li>
-            <li>
-              按照设计稿开发首页，结合 animate.css 、Tailwind 、fullpage
-              滚动事件，实现动画效果
-            </li>
-            <li>
-              配置插件 @vitejs/plugin-legacy ，解决低版本 Chrome 中的报错问题
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <h3>四、xx 人才</h3>
-      <ul>
-        <li>简介：统计企业培训期间的学员得分情况</li>
-        <li>
-          技术：Vue2 、VueRouter 、Vuex 、Tailwind 、ECharts 、docx-templates 等
-        </li>
-        <li>
-          职责：
-          <ul>
-            <li>初始化项目，配置 devServer ，搭建路由框架及页面布局</li>
-            <li>
-              根据设计稿的图表样式，将通用的 ECharts
-              图表配置（颜色、字体、轴间距等）封装到组件中，包括柱状图、折线图、饼图、雷达图
-            </li>
-            <li>
-              开发问卷统计模块，抽象题目的 json
-              模型，封装单选、多选、填空三类组件，集成 vuedraggable
-              ，使题目组件可拖拽配置
-            </li>
-            <li>
-              调研 docx-templates ，实现前端的学员统计数据和图表的导出功能
-            </li>
-            <li>通过 number-precision 解决统计数据的精度问题</li>
-          </ul>
-        </li>
-      </ul>
-      <h3>五、谈话系统</h3>
-      <ul>
-        <li>简介：将谈话语音转成文字，记录并分析关键词</li>
-        <li>
-          技术：Vue2 、VueRouter 、Vuex 、ElementUI 、js-audio-recorder 等
-        </li>
-        <li>
-          职责：
-          <ul>
-            <li>
-              使用 vue-cli 初始化项目，配置 devServer ，搭建路由框架及页面布局
-            </li>
-            <li>
-              调研 js-audio-recorder
-              ，快速实现录音、暂停、恢复、播放、音波绘制等功能
-            </li>
-            <li>
-              对接科大讯飞的语音识别接口，获取识别结果并存储在 Vuex
-              中，供其它组件使用
-            </li>
-            <li>使用 AudioContext API 实现音频片段的截取</li>
-          </ul>
-        </li>
-      </ul>
-      <h1>技能清单</h1>
-      <ul>
-        <li>Web开发：TypeScript / JavaScript / JSX / CSS / HTML</li>
-        <li>前端框架：Vue3 / React / Vue2</li>
-        <li>UI 库：Tailwind CSS / Naive UI / Element UI / Ant Design</li>
-        <li>周边工具：Webpack / Vite / npm / pnpm / nvm</li>
-        <li>DevOps：Git / Docker / Nginx</li>
-      </ul>
+        <li>有过服务端开发经验，熟悉 Java、Mysql</li>
+        <li>良好的代码习惯，熟悉 ESLint 等代码检查工具的配置及使用</li>
+        <li>了解运维部署，如 Docker、Nginx，并有实践经验</li>
+      </ol>
+      <h1 id="工作经历">工作经历</h1>
+      <h2 id="江苏易启策网络科技有限公司-2021-年-5-月--2023-年-1-月-）">
+        江苏易启策网络科技有限公司（ 2021 年 5 月 ~ 2023 年 1 月 ）
+      </h2>
+      <p>岗位：Web 前端开发，之后担任前端组长。</p>
+      <h3 id="前端基建">一、前端基建</h3>
+      <p>
+        完成 Vue2 到 Vue3 的技术升级；推广 TypeScript；使用 Nexus 搭建 npm
+        仓库；制定 ESLint 规范及代码提交规范；集成 husky 实现自动规范检查；开发
+        CLI 工具，极大简化项目创建流程；使用 TypeScript 二次封装
+        Axios，精细化拦截器配置，提升开发效率和体验；使用 Docker 和 Nginx
+        简化发布流程。
+        在此过程中，通过自学，对前端工程有了进一步的认知，工作成果获领导肯定。
+      </p>
+      <h3 id="xx-培训助手管理端">二、xx 培训助手管理端</h3>
+      <p>
+        项目技术：Vite / Vue3 / TSX / VueRouter / Pinia / Tailwind / NaiveUI /
+        ECharts 等<br />
+        主要职责：<br />
+        （1）创建项目，修改 Vite
+        配置；设计前端路由，开发脚本一次性生成文件目录，避免重复劳动；封装列表页
+        hook，提升开发效率；封装公共组件并编写文档。<br />
+        （2）开发培训管理模块，实现班级学员的创建、批量导入，分组（手动、随机）、宿舍分配，支持拖拽操作；使用
+        vue-amap 实现授课、签到地点的选择、回显。<br />
+        （3）开发评价问卷模块，封装单选、多选、填空三类组件，实现题目的创建、复制、拖拽排序、删除、编辑。
+      </p>
+      <h3 id="江苏交控官网---httpswwwjchccn">
+        三、江苏交控官网 -
+        <a href="https://www.jchc.cn" target="_blank" class="url"
+          >https://www.jchc.cn</a
+        >
+      </h3>
+      <p>
+        项目技术：Vite / Vue3 / VueRouter / Tailwind / animate.css 等<br />
+        主要职责：<br />
+        （1）开发 fullpage 组件，监听 wheel 事件，实现全屏滚动；绑定当前页和
+        location.hash，解决页面刷新状态丢失问题。<br />
+        （2）严格按照设计稿还原首页各个区域；使用 animate.css 和 Tailwind
+        快速实现元素进场动画。<br />
+        （3）集成 vite-plugin-imagemin 插件，在构建过程优化图片体积；使用
+        data-src 实现图片懒加载，提升网页性能。<br />
+        主要成果：视觉效果获得领导、用户的认可；该项目成为模板项目，减少后续企业门户网站的开发成本。
+      </p>
+      <h2 id="国泰新点软件股份有限公司--2020-年-11-月--2021-年-3-月-）">
+        国泰新点软件股份有限公司 （ 2020 年 11 月 ~ 2021 年 3 月 ）
+      </h2>
+      <p>岗位：Java 开发</p>
+      <h3 id="xx-电子政务系统">xx 电子政务系统</h3>
+      <p>
+        项目技术：Spring / Spring Boot / Mybatis / Mysql / HTML 等<br />
+        主要职责：驻场支持，根据用户需求，在项目标版的基础上，进行二次开发。
+      </p>
+      <h1 id="自我评价">自我评价</h1>
+      <p>
+        对前端社区和前沿技术有较高的兴趣和关注度，秉持“活到老，学到老”的原则，不断学习提升自己。<br />
+        处女座，强迫症患者，追求细节和完美。
+      </p>
     </div>
   </body>
 </html>

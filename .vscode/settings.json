@@ -20,5 +20,6 @@
     "tada",
     "todos",
     "Vuex"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
